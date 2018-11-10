@@ -1,11 +1,13 @@
-
+body {
+    background-color: #efefef;
+}
 
 
 
 
 /* ---------------------- start - Cover Photo - start---------------------------*/
 .tinted-image {
-    background: url("../images/supportiveLiving.jpg"); 
+    background: url("../images/contactUs.jpg"); 
     height: 50vh;
     background-position: center center;
     -webkit-background-size: cover;
@@ -25,6 +27,14 @@
 }
 /* ----------------------end - Cover Photo - end---------------------------*/
 
+
+img.map {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
 .section {
     padding: 2%;
     border-right: 10px solid black;
@@ -33,38 +43,32 @@
 }
 
 .section div ul li {
-    font-size: 90%;
-    padding-bottom: 2%;
+    font-size: 70%;
 }
 
-hr.orange {
-    border-color: #ff8000;
-    background-color: #ff8000;
-    color: #ff8000;
-}
 
 .divider {
     border-right: 1px solid #ff8000;
-    padding: 5%;
+    padding: 7%;
 }
 
-span.text-highlight {
-    font-size: 140%;
-    color: #80ffaa;
+
+form div.row {
+    margin: 3%;
 }
 
-p.program-highlights {
-    font-size: 80%;
+form div input {
+    width: 100%;
 }
 
-div.program-highlights {
-    margin-top: 20px;
+div.form-container {
+    max-width: 480px;
 }
 
-div.program-highlights i {
-    font-size: 150%;
-    color: #ff8000;
-}
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     .divider {
@@ -74,5 +78,11 @@ div.program-highlights i {
     }
     .list {
         margin-top: 15px;
+    }
+    textarea {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
     }
 }

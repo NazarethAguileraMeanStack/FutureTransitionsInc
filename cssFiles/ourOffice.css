@@ -1,11 +1,13 @@
-
-
-
+body {
+    background-color: #efefef;
+}
 
 
 /* ---------------------- start - Cover Photo - start---------------------------*/
+
 .tinted-image {
-    background: url("../images/supportiveLiving.jpg"); 
+
+    background: url("../images/handsHoldingBanner.jpg"); 
     height: 50vh;
     background-position: center center;
     -webkit-background-size: cover;
@@ -13,8 +15,10 @@
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  
+
+}
+
+
 .tinted-image div h2 {
     color: white;
     height: 400px;
@@ -24,55 +28,21 @@
     text-shadow: 2px 2px 4px rgba(0,0,0,.6), 4px 4px 8px rgba(50,50,50,.4), 8px 8px 12px rgba(100,100,100,.2);    
 }
 /* ----------------------end - Cover Photo - end---------------------------*/
+    
+p strong {
+    color: #0f192b;
+    font-size: 140%;
+}
+
 
 .section {
     padding: 2%;
     border-right: 10px solid black;
     border-left: 10px solid black;
-    font-size: 140%;
 }
 
-.section div ul li {
-    font-size: 90%;
-    padding-bottom: 2%;
-}
 
-hr.orange {
-    border-color: #ff8000;
-    background-color: #ff8000;
-    color: #ff8000;
-}
 
-.divider {
-    border-right: 1px solid #ff8000;
-    padding: 5%;
-}
 
-span.text-highlight {
-    font-size: 140%;
-    color: #80ffaa;
-}
 
-p.program-highlights {
-    font-size: 80%;
-}
 
-div.program-highlights {
-    margin-top: 20px;
-}
-
-div.program-highlights i {
-    font-size: 150%;
-    color: #ff8000;
-}
-
-@media only screen and (max-width: 768px) {
-    .divider {
-        border-right: none;
-        border-bottom: 1px solid #ff8000;
-        padding: 7%;
-    }
-    .list {
-        margin-top: 15px;
-    }
-}

@@ -58,6 +58,11 @@ div p.imgInfo {
 #roots h2 {
     color: #0000ff; 
 }
+#philosophy {
+    padding: 0 10% 10% 10%;
+    line-height: 300%;
+    border-right: 1px solid #ff8000;
+}
 #philosophy h2 {
     color: #ee0000;
 }
