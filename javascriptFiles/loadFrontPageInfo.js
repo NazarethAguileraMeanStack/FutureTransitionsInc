@@ -1,14 +1,26 @@
 let frontPageInfoId = "";
 let frontPageInfoSourceId = "";
 let frontPageInfoTitleId = "";
+let mainImage = document.getElementById('top');
+
+let slider = [
+    '../images/homePageMainPic.jpg',
+    '../images/HomePageMainPic2.jpg',
+    '../images/HomePageMainPic3.jpg',
+    '../images/HomePageMainPic4.jpg'
+    ];
+
 
 
 window.onload = function setVariables(){
     frontPageInfoId = document.getElementById("frontPageInfo");
     frontPageInfoSourceId = document.getElementById("frontPageInfoSource");
     frontPageInfoTitleId = document.getElementById("frontPageInfoTitle");
+    mainImage = document.getElementById('top')
     whatIsInfo();
 }
+
+slideShow();
 
 function whatIsInfo(){
     frontPageInfoTitleId.innerText = "What is a Developmental Disability?";    
@@ -55,6 +67,19 @@ function retardationInfo(){
     frontPageInfoId.innerText = "Intellectual disability is characterized both by a significantly below-average score on a test of mental ability or intelligence and by limitations in the ability to function in areas of daily life, such as communication, self-care, and getting along in social situations and school activities. Intellectual disability is sometimes referred to as cognitive disability...";
     frontPageInfoSourceId.href = "https://www.cdc.gov/ncbddd/actearly/pdf/parents_pdfs/IntellectualDisability.pdf";
 
+}
+
+function slideShow() {
+    let i = 0;
+    setInterval(function() {
+        if (i === slider.length - 1) i = 0;
+        else i++;
+        mainImage.style.opacity = 0;
+        setTimeout(function(){
+            mainImage.style.backgroundImage = `url(${slider[i]})`;
+            mainImage.style.opacity = 1;
+        }, 800);
+    }, 6000);
 }
 
 
