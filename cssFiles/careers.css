@@ -4,7 +4,7 @@
 
 
 .tinted-image {
-    background: url("FutureTransitionsInc/images/careersPageCover.jpg"); 
+    background: url("../images/careersPageCover.jpg"); 
     height: 50vh;
     background-position: center center;
     -webkit-background-size: cover;
